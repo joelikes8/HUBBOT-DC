@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Bot Order System</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <span class="fs-4">Bot Order System</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/order-status">Check Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/your-server" target="_blank">Join Discord</a>
+                    </li>
+                    <li class="nav-item" id="bot-status">
+                        <span class="badge bg-secondary">Bot Status: Checking...</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Custom Discord Bot Service</h1>
+                    <p class="lead mb-4">Professional Discord bots built to your specifications and paid with Robux</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a href="https://discord.gg/your-server" target="_blank" class="btn btn-light btn-lg px-4 gap-3">Join Our Discord</a>
+                        <a href="#pricing" class="btn btn-outline-light btn-lg px-4">View Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5" id="features">
+        <div class="container">
+            <h2 class="text-center mb-5">How It Works</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zm0 1H2v11.586l2-2A1 1 0 0 1 4.414 11H14z"/>
+                                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title">1. Order Your Bot</h5>
+                            <p class="card-text">Join our Discord server and use the /order command to specify the type of bot and features you need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+                                    <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title">2. Make Payment</h5>
+                            <p class="card-text">Link your Roblox account with /link and make payment through a custom Roblox gamepass using Robux.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
+                                    <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a24.8 24.8 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+                                    <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+                                </svg>
+                            </div>
+                            <h5 class="card-title">3. Receive Your Bot</h5>
+                            <p class="card-text">We'll develop your custom bot and deliver it with full setup instructions and 30 days of support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="pricing">
+        <div class="container">
+            <h2 class="text-center mb-5">Pricing Options</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-secondary text-white text-center py-3">
+                            <h4 class="my-0 fw-normal">Basic</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title text-center mb-4">100<small class="text-muted fw-light"> Robux</small></h1>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✅ Simple Command-based Bot</li>
+                                <li class="mb-2">✅ Basic Moderation Commands</li>
+                                <li class="mb-2">✅ Welcome Messages</li>
+                                <li class="mb-2">✅ Custom Help Command</li>
+                                <li class="mb-2">❌ Database Features</li>
+                                <li class="mb-2">❌ Web Dashboard</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="https://discord.gg/your-server" class="btn btn-primary" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center bg-transparent">
+                            <small class="text-muted">Delivery in 1-3 days</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-primary text-white text-center py-3">
+                            <h4 class="my-0 fw-normal">Standard</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title text-center mb-4">250<small class="text-muted fw-light"> Robux</small></h1>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✅ Multiple Command Categories</li>
+                                <li class="mb-2">✅ Advanced Moderation Tools</li>
+                                <li class="mb-2">✅ Custom Embeds & Reactions</li>
+                                <li class="mb-2">✅ Basic Database Integration</li>
+                                <li class="mb-2">✅ Auto-moderation</li>
+                                <li class="mb-2">❌ Web Dashboard</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="https://discord.gg/your-server" class="btn btn-primary" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center bg-transparent">
+                            <small class="text-muted">Delivery in 3-7 days</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-header bg-info text-white text-center py-3">
+                            <h4 class="my-0 fw-normal">Premium</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title text-center mb-4">500<small class="text-muted fw-light"> Robux</small></h1>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">✅ Fully Custom Bot</li>
+                                <li class="mb-2">✅ Advanced Database Features</li>
+                                <li class="mb-2">✅ Web Dashboard</li>
+                                <li class="mb-2">✅ Custom API Integrations</li>
+                                <li class="mb-2">✅ Voice Channel Features</li>
+                                <li class="mb-2">✅ Premium Support (60 days)</li>
+                            </ul>
+                            <div class="d-grid">
+                                <a href="https://discord.gg/your-server" class="btn btn-primary" target="_blank">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center bg-transparent">
+                            <small class="text-muted">Delivery in 7-14 days</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://discord.gg/your-server" class="btn btn-outline-primary btn-lg" target="_blank">Need a custom solution? Contact us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="accordionFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How do I make a payment?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    We accept Robux payments through gamepasses. Use <code>/link</code> to connect your Roblox account, then follow the specific payment instructions for your order.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How long does it take to complete an order?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Basic bots typically take 1-3 days, standard bots 3-7 days, and premium/custom bots 7-14 days depending on complexity.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is your refund policy?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Refunds are available if work hasn't started on your order. Once development begins, partial refunds may be offered based on completion status.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Can I add more features after ordering?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Yes! Additional features can be added during development for an adjusted price. Contact support for more details.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Do I get the source code of my bot?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body">
+                                    Yes, you'll receive the full source code of your custom bot upon completion and final payment.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Ready to order your custom bot?</h2>
+            <p class="lead mb-4">Join our Discord server and get started with our easy ordering process!</p>
+            <a href="https://discord.gg/your-server" target="_blank" class="btn btn-light btn-lg">Join Discord Server</a>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5>Bot Order System</h5>
+                    <p>Professional Discord bots built to your specifications and paid with Robux. Our service makes it easy to get the perfect custom bot for your server.</p>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-white">Home</a></li>
+                        <li><a href="/dashboard" class="text-white">Dashboard</a></li>
+                        <li><a href="/order-status" class="text-white">Check Order</a></li>
+                        <li><a href="#pricing" class="text-white">Pricing</a></li>
+                        <li><a href="#faq" class="text-white">FAQ</a></li>
+                        <li><a href="https://discord.gg/your-server" target="_blank" class="text-white">Discord</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:support@example.com" class="text-white">support@example.com</a></li>
+                        <li><a href="https://discord.gg/your-server" target="_blank" class="text-white">Discord Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">© 2025 Bot Order System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to check bot status
+        document.addEventListener('DOMContentLoaded', function() {
+            function checkBotStatus() {
+                fetch('/api/bot-status')
+                    .then(response => response.json())
+                    .then(data => {
+                        const statusEl = document.getElementById('bot-status');
+                        if (statusEl) {
+                            if (data.status === 'online') {
+                                statusEl.innerHTML = '<span class="badge bg-success">Online</span>';
+                            } else {
+                                statusEl.innerHTML = '<span class="badge bg-danger">Offline</span>';
+                            }
+                        }
+                    })
+                    .catch(err => console.error('Error checking bot status:', err));
+            }
+            
+            // Check status initially and then every 30 seconds
+            if (document.getElementById('bot-status')) {
+                checkBotStatus();
+                setInterval(checkBotStatus, 30000);
+            }
+        });
+    </script>
+</body>
+</html>
